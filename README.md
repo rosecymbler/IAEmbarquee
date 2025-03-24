@@ -1,4 +1,4 @@
-# Predictive Maintenance using AI4I 2020 Dataset
+![image](https://github.com/user-attachments/assets/3374207b-4a83-40dd-b63a-add09cf5f355)# Predictive Maintenance using AI4I 2020 Dataset
 
 This project implements an end-to-end predictive maintenance solution for industrial equipment using machine learning. We developed a neural network model that processes sensor data to detect and classify five types of machine failures, with deployment capability on STM32 microcontrollers for edge computing applications.
 
@@ -26,9 +26,21 @@ The project is structured around a Jupyter notebook that guides through the foll
 4. **Model Training with Balancing**: To mitigate the issues observed in the unbalanced model training, we applied SMOTE (Synthetic Minority Oversampling Technique) from the imbalanced-learn library. This technique generates synthetic samples for the minority class (failed machines) to balance the dataset before training.
 5. **Performance Comparison**: Comparing the performance of the models trained on imbalanced and balanced datasets. We observed improvements in the second confusion matrix, which implies, improvements in our model.
 
-##STM32CubeIDE
+## STM32CubeIDE
 In this final project stage, our goal was to deploy a neural network model - originally trained in a Jupyter Notebook - onto an STM32L4R9 microcontroller, enabling real-time local inference for predictive maintenance applications.
 
+## Conclusion on the Embedded AI Model Performance
+
+![WhatsApp Image 2025-03-24 at 17 54 21_fa6f9cbf](https://github.com/user-attachments/assets/ede1e31c-4f4b-4bf2-9a74-afdd37b0d3f8)
+
+
+The results demonstrate the remarkable effectiveness of our AI model deployed on STM32CubeIDE. After a progressive learning phase, the system achieved **100% accuracy by the 100th iteration**, with consistent and stable convergence (improving from 0.91 to 0.99 between iterations 91 and 99).  
+
+A particularly notable result occurred at iteration 98, where the model correctly identified a different pattern (**[0, 0, 1, 0, 0]**) with **99.6% confidence**, while maintaining high overall accuracy. The perfect match between expected and received outputs in the final iterations confirms the robustness of our embedded implementation on the STM32 platform.  
+
+These excellent results validate our optimization approach for deployment on STM32 microcontrollers while ensuring reliable real-time inference for practical applications. The linear progression in accuracy suggests that the model could have converged even earlier with additional iterations.  
+
+This successful implementation highlights the potential of lightweight AI models in resource-constrained embedded systems, balancing efficiency and performance.
 
 ## Authors
 
