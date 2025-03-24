@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/3374207b-4a83-40dd-b63a-add09cf5f355)# Predictive Maintenance using AI4I 2020 Dataset
-
 This project implements an end-to-end predictive maintenance solution for industrial equipment using machine learning. We developed a neural network model that processes sensor data to detect and classify five types of machine failures, with deployment capability on STM32 microcontrollers for edge computing applications.
 
 ## Dataset Overview
