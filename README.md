@@ -21,11 +21,10 @@ The dataset used is the **AI4I 2020 Predictive Maintenance Dataset**, which cont
 The project is structured around a Jupyter notebook that guides through the following steps:
 
 1. **Dataset Analysis**: Exploratory data analysis to understand the dataset. This analysis revealed a significant class imbalance, with functional machines being vastly overrepresented compared to failed ones. Such an imbalance could bias the model's learning, causing it to prioritize accuracy on the majority class while neglecting failure detection—a critical aspect for predictive maintenance. 
-2. **Preparing the Dataset** After cleaning the data and selecting relevant features (e.g., temperatures, speed, torque, wear, etc.), we split the dataset into training, test, and validation sets.
-3. **Modeling**: 
-4. **Model Training without Balancing**: Training a deep learning model on the original, imbalanced dataset. When training a deep learning model on this dataset, the impact of class imbalance became evident in the model's performance, particularly when analyzing the confusion matrix.
-5. **Model Training with Balancing**: To mitigate the issues observed in the unbalanced model training, we applied SMOTE (Synthetic Minority Oversampling Technique) from the imbalanced-learn library. This technique generates synthetic samples for the minority class (failed machines) to balance the dataset before training.
-6. **Performance Comparison**: Comparing the performance of the models trained on imbalanced and balanced datasets. We observed improvements in the second confusion matrix, which implies, improvements in our model.
+2. **Preparing the Dataset**: After cleaning the data and selecting relevant features (e.g., temperatures, speed, torque, wear, etc.), we split the dataset into training, test, and validation sets.
+3. **Model Training without Balancing**: Training a deep learning model on the original, imbalanced dataset. When training a deep learning model on this dataset, the impact of class imbalance became evident in the model's performance, particularly when analyzing the confusion matrix.
+4. **Model Training with Balancing**: To mitigate the issues observed in the unbalanced model training, we applied SMOTE (Synthetic Minority Oversampling Technique) from the imbalanced-learn library. This technique generates synthetic samples for the minority class (failed machines) to balance the dataset before training.
+5. **Performance Comparison**: Comparing the performance of the models trained on imbalanced and balanced datasets. We observed improvements in the second confusion matrix, which implies, improvements in our model.
 
 ##STM32CubeIDE
 In this final project stage, our goal was to deploy a neural network model - originally trained in a Jupyter Notebook - onto an STM32L4R9 microcontroller, enabling real-time local inference for predictive maintenance applications.
