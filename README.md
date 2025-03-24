@@ -45,3 +45,5 @@ The project is structured around a Jupyter notebook that guides through the foll
 2) Ensure the necessary dependencies are installed
 3) Open the TP_IA_EMBARQUEE.ipynb notebook with Jupyter Notebook or JupyterLab
 4) Execute the notebook cells sequentially to follow the complete process
+5) Download the file containing our AI model
+6) Use it in a new STM32 project, usin
