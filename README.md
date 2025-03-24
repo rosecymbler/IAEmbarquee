@@ -38,6 +38,7 @@ The project is structured around a Jupyter notebook that guides through the foll
 - **Scikit-learn**: For additional machine learning utilities.
 - **Numpy**: For numerical operations.
 - **Imbalanced-learn**: For balancing the dataset.
+- **STM32CubeIDE** : For testing our AI model
 
 ## Installation and Usage
 
@@ -46,4 +47,5 @@ The project is structured around a Jupyter notebook that guides through the foll
 3) Open the TP_IA_EMBARQUEE.ipynb notebook with Jupyter Notebook or JupyterLab
 4) Execute the notebook cells sequentially to follow the complete process
 5) Download the file containing our AI model
-6) Use it in a new STM32 project, usin
+6) Flash the model onto the STM32 board. Display the model's accuracy on the STM32 screen
+7) Run inference on test data using the STM32 board. Confirm that the displayed accuracy matches expectations.
